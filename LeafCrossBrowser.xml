@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite" verbose="5">
+<parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+<parameter name="username" value="DemoSalesManager"></parameter>
+<parameter name="password" value="crmsfa"></parameter>
+
+  <test  name="Test1">
+  <parameter name="Browser" value="Chrome"></parameter>
+    <classes>
+     <class name="week6.day1.Create1"/>
+       <class name="week6.day1.Edit1"/>
+       <class name="week6.day1.Duplicate1"/>
+       <class name="week6.day1.Merge1"/>
+       <class name="week6.day1.Delete1"/>
+           
+    </classes>
+  </test> <!-- Test -->
+  
+  
+    
+    <test  name="Test2">   
+  <parameter name="Browser" value="Edge"></parameter>
+    <classes>
+      <class name="week6.day1.Create1"/>      
+       <class name="week6.day1.Edit1"/>  
+       <class name="week6.day1.Duplicate1"/>
+       <class name="week6.day1.Merge1"/>
+       <class name="week6.day1.Delete1"/>    
+      
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
